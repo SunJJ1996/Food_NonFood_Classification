@@ -78,24 +78,32 @@ Food_classification/Example_food_out/
         …
 ```
 Run ```cam.py``` to generate the result of original networks. Please notice the information from line 78 to line 106 to change the corresponding parts.<br>
+Do not forget change the path of data in line 109.
 
-Run ```cam_cbam.py``` to generate the result of revised model.
+Run ```cam_cbam.py``` to generate the result of revised model.<br>
+Do not forget change the path of data in line 107.
+
 
 ## Result
 ### Accuracy
+
 | - | Accuracy  | Model Size (M) |  Epoch  |
 | --- | --- | --- | --- |
 | Resnet50 | 92.620 | 204 | 212 | 
 | Resnet101 | 92.681 | 357 | 55 | 
 | Resnet152 | 92.193 | 482 | 214 | 
 | Densenet161 | 93.395 | 230 | 154 | 
-| Densenet201 | 93.395 | 161 | 49 | 
+| Densenet201 | 93.395 | 161 | **49** | 
 | Densenet201-CBAM | 94.451 | 77 | 199 | 
-| Densenet201-CBAM-Aug | 95.24 | 77 | 185 |
+| Densenet201-CBAM-Aug | **95.24** | **77** | 185 |
 
 ### Grad-cam
+
 #### Original models
+
 ![pictures](https://github.com/SunJJ1996/Food_NonFood_Classification/tree/main/pictures/origin_food.PNG) <br>
 ![pictures](https://github.com/SunJJ1996/Food_NonFood_Classification/tree/main/pictures/origin_nonfood.PNG) <br>
+
 #### Revised model
+
 ![pictures](https://github.com/SunJJ1996/Food_NonFood_Classification/tree/main/pictures/revised.PNG) <br>
