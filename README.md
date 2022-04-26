@@ -1,5 +1,6 @@
 # Food_NonFood_Classification
-This project is for the second interview of ARTORG Center for Biomedical, University of Bern.
+This project is for the second interview of ARTORG Center for Biomedical, University of Bern. 
+I choosed the **second project** you had prepared, which is related to food and non-food classification.
 The original networks I have used include: ResNet50, ResNet101, ResNet152, DenseNet161, DenseNet201.
 The revised network I used in this project is: DenseNet-201 with additional CBAM.
 I will illustrate the processes and methods in the presentation.
@@ -39,7 +40,7 @@ To train the original network (ResNet and DenseNet) run: <br>
 ``` train_main.py ``` <br>
 **Do not forget:** <br>
 Changing **Pick_model** into the structure you want to train in line 19.<br>
-Changing path in **data_loader()** into the dictionary where you data located in line 109.<br>
+Changing path in **data_loader()** into the dictionary where your data located in line 109.<br>
 
 To train the revised network run: <br>
 ``` train_dense_cbam.py ```<br>
